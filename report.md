@@ -42,7 +42,7 @@ The set of features that resulted in this highest recall while also maintaining 
 
 <img src="model11_confmat.png" width="250">
 
-<img src="PR-Curve_model11.png" width="500">
+<img src="PR-Curve_model11.png" width="400">
 
 
 ## Sources
