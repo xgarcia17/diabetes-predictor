@@ -24,9 +24,9 @@ This plot highlights the correlation matrix between a set of the features in the
 
 Additionally, I found the features _glucose_postprandial_ and _glucose_fasting_ contained the most distinct bimodal distributions of the feature distributions I plotted.
 
-<img src="image-4.png" width="400">
+<img src="image-4.png" width="500">
 
-<img src="image-5.png" width="400">
+<img src="image-5.png" width="500">
 
 ### Model Selection
 
@@ -42,7 +42,8 @@ The set of features that resulted in this highest recall while also maintaining 
 
 <img src="model11_confmat.png" width="250">
 
-![alt text](PR-Curve_model11.png)
+<img src="PR-Curve_model11.png" width="500">
+
 
 ## Sources
 
