@@ -4,7 +4,7 @@
 
 ### CSC 466 - Fall 2025
 
-### The Problem
+## The Problem
 
 According to the World Health Organization (WHO), diabetes is "a chronic disease that occurs either when the pancreas does not produce enough insulin or when the body cannot effectively use the insulin it produces." Individuals with diabetes face an increased risk of suffering a heart attack, stroke, and kidney failure, among other health problems. Approximately 830 million people worldwide have diabetes in 2025. This number has been steadily increasing over the past several decades.
 
@@ -30,7 +30,21 @@ Additionally, I found the features _glucose_postprandial_ and _glucose_fasting_ 
 
 ### Model Selection
 
-### Sources
+The goal of this project is to predict whether an individual will be diagnosed with diabetes from some set of known information about them. Since being diagnosed with diabetes may come with significant ramifications, recall was optimized over precision. After training, hyperparameter tuning, and evaluating KNN classificaiton models, random forest classification models, and logistic regression classificaiton models, the model that typically performed the highest, in regards to recall, was the logistic regression model.
+
+### Unpacking the Results
+
+The set of features that generated the highest recall at a rate of 0.9384 were the average amount of physical activity minutes per week, BMI, and the average amount of sleep hours per day. This recall rate is incredibly high, which is great when optimizing for recall. However, the precision rate was pretty low at a rate of 0.6098. While precision isn't the focus, this was concerning because it, along with the following confusion matrix, was the result of the model predicting the majority of individuals had diabetes. Casting a wide net like this isn't a very useful predictor.
+
+![alt text](model13_confmat.png)
+
+The set of features that resulted in this highest recall while also maintaining and acceptable level of precision were the average amount of physical activity minutes per week, BMI, glucose fasting levels, and glucose postprandial levels. The recall rate of this model was 0.8754 and the precision was 0.8494. The resulting confusion matrix and PR-Curve are below.
+
+![alt text](model11_confmat.png)
+
+![alt text](PR-Curve_model11.png)
+
+## Sources
 
 Dataset name: **Diabetes Health Indicators Dataset**
 The data comes from Mohan Krishna Thalla on Kaggle @ https://www.kaggle.com/datasets/mohankrishnathalla/diabetes-health-indicators-dataset
