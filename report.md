@@ -46,6 +46,18 @@ The set of features that resulted in this highest recall while also maintaining 
 
 ### Unpacking the Results
 
+Glucose, or blood sugar, is the energy the body creates from the food it consumes, (ADA). The body produces insulin which helps transport glucose to all the cells of the body so that they have the energy to function. Consequentially, measuring glucose levels is often used as some of a set of tests to determine if someone has diabetes. Each of _glucose fasting_ and _glucose postprandial_ are used as separate tests, however, in this dataset, it is unclear of how individuals were labeled as having diabetes or not. So, I cannot definitively determine whether those features contributed to the labeling of the data, but as they are real metrics and factors that medical professionals use to make diabetes diagnoses, they can be included as valid features in the model without too large a concern for target or data leakage.
+
+Glucose fasting is the measure of an individual's blood sugar level in their blood after an eight to twelve hour fast, consuming only water if anything. Glucose postprandial is the measure of an individual's blood sugar level after consuming food or drink. Individuals with diabetes often have higher blood sugar levels for both of these metrics than individuals without diabetes. In fact, when using glucose fasting to test for diabetes, an individual who has a glucose fasting result of 126 mg/dL on two tests is considered to have diabetes, although other tests are often used in conjunction with this test to confirm the diagnoses.
+
+Obviously, individuals who do not know they have diabetes may not have access to these glucose metrics that come from examining their blood. But, if they have access to this information, this model would aid in predicting whether or not they may have diabetes. However, since these datapoints of individuals were taken at a point in time, it is possible that an individual without diabetes may have a large glucose fasting reading without having diabetes.
+
+As discussed earlier, individuals with and without diabetes may often have similar activity and sleep levels. This motivated me to look into what other factors may then cause the difference in glucose levels. It may be that this data recorded everything well after knowing if an individual had diabetes or not, which may have enticed individuals with diabetes to alter their lifestyles to be more health-conscious, but the dataset does not state this. Regardless, healthy lifestyles help in preventing individuals from developing diabetes, but what is and isn't healthy isn't as cut-and-dry as many may perceive it to be. An individual's blood sugar often does depend on that individual's habits, but there are other factors that individuals should consider when trying to prevent diabetes. For example, the 2015 CBS News article titled "'Huge' differences even though people ate the same foods" highlighted how individuals' bodies and blood sugar levels may respond differently to the same foods, even when those individuals do not have diabetes and those foods are universally considered healthy. The article gives and example of a woman with prediabetes whose blood sugar increases after eating tomatoes. The woman indicated that before participating in the study highlighted in the article, her past attempts at various healthy diets all failed.
+
+## Conclusion
+
+This project reinforces the importance of healthy habits in preventing diabetes while also highlighting how everybody's body is different and there is no one-size-fits-all approach to health and diabetes prevention. Living a healthy lifestyle seems to be the best thing an individual can do under their own power to prevent diabetes, but not all factors are under their control.
+
 ## Sources
 
 Dataset name: **Diabetes Health Indicators Dataset**
@@ -54,6 +66,8 @@ The data comes from Mohan Krishna Thalla on Kaggle @ https://www.kaggle.com/data
 “10 Surprising Things That Can Spike Your Blood Sugar.” Centers for Disease Control and Prevention, Centers for Disease Control and Prevention, www.cdc.gov/diabetes/living-with/10-things-that-spike-blood-sugar.html. Accessed 3 Dec. 2025.
 
 “Blood Glucose and Insulin.” Blood Glucose and Insulin | American Diabetes Association, diabetes.org/about-diabetes/high-blood-sugar. Accessed 3 Dec. 2025.
+
+“Diabetes Diagnosis.” Diabetes Diagnosis & Tests | ADA, diabetes.org/about-diabetes/diagnosis. Accessed 3 Dec. 2025.
 
 “Diabetes.” World Health Organization, World Health Organization, www.who.int/health-topics/diabetes#tab=tab_1. Accessed 3 Dec. 2025.
 
