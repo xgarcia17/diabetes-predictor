@@ -24,7 +24,8 @@ This plot highlights the correlation matrix between a set of the features in the
 
 Additionally, I found the features _glucose_postprandial_ and _glucose_fasting_ contained the most distinct bimodal distributions of the feature distributions I plotted.
 
-![alt text](image-4.png) ![alt text](image-5.png)
+![alt text](image-4.png)
+![alt text](image-5.png)
 
 ### Model Selection
 
