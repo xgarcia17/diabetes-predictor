@@ -18,15 +18,15 @@ To accomplish this, I utilized a dataset from Kaggle titled _Diabestes Health In
 
 I narrowed down my feature space through looking at the following correlation matrix.
 
-<img src="image.png" width="300">
+<img src="image.png" width="500">
 
 This plot highlights the correlation matrix between a set of the features in the dataset. Using this, I was able to remove some features that are highly correlated. Some of these features seemed to serve as a sanity check. For instance, _ldl_cholesterol_ and _hdl_cholesterol_ seemed to be correlated, which makes sense. I ended up removing both since _total_cholesterol_, another feature in the model, is calculated using the previous two.
 
 Additionally, I found the features _glucose_postprandial_ and _glucose_fasting_ contained the most distinct bimodal distributions of the feature distributions I plotted.
 
-<img src="image-4.png" width="300">
+<img src="image-4.png" width="400">
 
-<img src="image-5.png" width="300">
+<img src="image-5.png" width="400">
 
 ### Model Selection
 
