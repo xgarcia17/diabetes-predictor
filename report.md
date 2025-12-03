@@ -18,15 +18,15 @@ To accomplish this, I utilized a dataset from Kaggle titled _Diabestes Health In
 
 I narrowed down my feature space through looking at the following correlation matrix.
 
-<img src="image.png" width="500">
+<img src="images/image.png" width="500">
 
 This plot highlights the correlation matrix between a set of the features in the dataset. Using this, I was able to remove some features that are highly correlated. Some of these features seemed to serve as a sanity check. For instance, _ldl_cholesterol_ and _hdl_cholesterol_ seemed to be correlated, which makes sense. I ended up removing both since _total_cholesterol_, another feature in the model, is calculated using the previous two.
 
 Additionally, I found the features _glucose_postprandial_ and _glucose_fasting_ contained the most distinct bimodal distributions of the feature distributions I plotted.
 
-<img src="image-4.png" width="500">
+<img src="images/image-4.png" width="500">
 
-<img src="image-5.png" width="500">
+<img src="images/image-5.png" width="500">
 
 ### Model Selection
 
@@ -36,13 +36,13 @@ The goal of this project is to predict whether an individual will be diagnosed w
 
 The set of features that generated the highest recall at a rate of 0.9384 were the average amount of physical activity minutes per week, BMI, and the average amount of sleep hours per day. This recall rate is incredibly high, which is great when optimizing for recall. However, the precision rate was pretty low at a rate of 0.6098. While precision isn't the focus, this was concerning because it, along with the following confusion matrix, was the result of the model predicting the majority of individuals had diabetes. Casting a wide net like this isn't a very useful predictor.
 
-<img src="fixed_model13_confmat.png" width="250">
+<img src="images/fixed_model13_confmat.png" width="250">
 
 The set of features that resulted in this highest recall while also maintaining and acceptable level of precision were the average amount of physical activity minutes per week, BMI, glucose fasting levels, and glucose postprandial levels. The recall rate of this model was 0.8754 and the precision was 0.8494. The resulting confusion matrix and PR-Curve are below.
 
-<img src="fixed_model11_confmat.png" width="250">
+<img src="images/fixed_model11_confmat.png" width="250">
 
-<img src="PR-Curve_model11.png" width="400">
+<img src="images/PR-Curve_model11.png" width="400">
 
 ### Unpacking the Results
 
