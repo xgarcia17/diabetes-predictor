@@ -36,11 +36,11 @@ The goal of this project is to predict whether an individual will be diagnosed w
 
 The set of features that generated the highest recall at a rate of 0.9384 were the average amount of physical activity minutes per week, BMI, and the average amount of sleep hours per day. This recall rate is incredibly high, which is great when optimizing for recall. However, the precision rate was pretty low at a rate of 0.6098. While precision isn't the focus, this was concerning because it, along with the following confusion matrix, was the result of the model predicting the majority of individuals had diabetes. Casting a wide net like this isn't a very useful predictor.
 
-<img src="model13_confmat.png" width="250">
+<!-- <img src="model13_confmat.png" width="250"> -->
 
 The set of features that resulted in this highest recall while also maintaining and acceptable level of precision were the average amount of physical activity minutes per week, BMI, glucose fasting levels, and glucose postprandial levels. The recall rate of this model was 0.8754 and the precision was 0.8494. The resulting confusion matrix and PR-Curve are below.
 
-<img src="model11_confmat.png" width="250">
+<!-- <img src="model11_confmat.png" width="250"> -->
 
 <img src="PR-Curve_model11.png" width="400">
 
